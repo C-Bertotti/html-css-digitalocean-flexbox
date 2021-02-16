@@ -351,6 +351,15 @@ a.link--arrow:after {
 #feat1 {
     padding-bottom: 30px;
 }
+
+#feat1 .container__small {
+    display: flex;
+}
+#feat1 .container__small > * {
+    flex-basis: calc(100% / 3);
+} 
+.feat__list {
+}
 .feat__nav__btn  {
    display: block;
    border: none;
@@ -371,11 +380,20 @@ a.link--arrow:after {
     border-width: 2px;
 }
 
-.feat__items img {
+.feat__items--wrapper {
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.feat__item { 
+    flex-basis: 49%;
+}
+.feat__item img {
     height: 40px;
     margin-bottom: 10px;
 }
-.feat__items p {
+.feat__item p {
     font-size: 14px;
 }
 /* /feat1 */
@@ -388,7 +406,9 @@ a.link--arrow:after {
 .carousel__arrow:hover {
     opacity: 1;
 }
-
+.preview__img {
+    width: 100%;
+}
 .carousel__wrapper {
     width: 100%;
 }
