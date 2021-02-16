@@ -1,0 +1,345 @@
+body {
+    font-family: 'Inter', sans-serif;    padding-top: 60px;
+}
+
+.debug * {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* mix */
+.list-inline {
+    margin-bottom: 0;
+}
+.color--secondary {
+    color: #006aff;
+}
+
+.bg--secondary {
+    background-color: #f3f5f9;
+}
+
+.container__small {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* /mix */
+
+/* helper class */
+.mg__b--30 {
+    margin-bottom: 30px;
+}
+/* /helper class */
+
+
+/* typo */
+h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+h2, h3, h4 {
+    color: #031b4e;
+    margin: 10px 0;
+}
+h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+}
+h3, h4 {
+    font-weight: 500;
+}
+h4 {
+
+}
+h5 {
+    color: #5b6987;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+    color: #5b6987;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+h2 + p {
+    margin-bottom: 60px;
+}
+/* /typo */
+
+/* buttons */
+.btn--bordered, .header__nav .btn--bordered {
+    background-color: #fff;
+    border: 1px solid #006aff;
+    color: #006aff;
+}
+.btn { 
+    background-color: #fff;
+}
+.btn--bordered:hover, 
+.header__nav .btn--bordered:hover,
+.btn--primary {
+    background-color: #006aff;
+    color: #fff;
+}
+/* buttons */
+
+
+/* header */
+header {
+    line-height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(3, 27, 78, 0.1);
+    z-index: 999;
+}
+
+#header__logo {
+    max-height: 28px;
+}
+
+.header__r--r {
+    float: left;
+}
+.header__r--l {
+    float: right;
+}
+
+.header__nav {
+    display: none;
+}
+.header__nav li {
+    margin: 0 3px;
+}
+
+.header__nav a {
+    color: #031b4e;
+}
+.header__nav a:hover {
+    color: #006aff;
+    text-decoration: none;
+}
+
+.header__nav a i {
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+#btn--menu {
+    border: none;
+}
+
+/* header responsive */
+/* ---- from medium devices / desktops ----  */
+@media screen and (min-width:992px) {
+    .header__nav {
+        display: block;
+    }
+
+    #btn--menu {
+        display: none;
+    } 
+}
+/* /---- from medium devices / desktops ----  */
+/* /header responsive */
+/* header */
+
+/* main */
+section {
+    padding: 60px 0;
+}
+
+section a, section a:hover {
+    color: #006aff;
+
+}
+
+section a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #006aff;
+}
+
+a.link--arrow:after {
+    content: ">";
+    padding-left: 5px;
+}
+
+
+/* hero */
+#hero {
+    background-image: url("../img/bg-hero.svg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65%;
+}
+
+/* hero__heading */
+.hero__heading p {
+    color: #fff;
+    opacity: .8;
+}
+/* /hero__heading */
+/* login form */
+.login__box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.login__box h3 span {
+    color: #006aff;
+    padding-top: 20px;
+}
+
+.login__form .form-group {
+    margin-bottom: 10px;
+}
+
+.login__form input {
+    width: 100%;
+    border-radius: 5px;
+}
+.login__text {
+    border: 1px solid #e5e8ed;
+    padding: 10px;
+}
+.login__btn {
+    padding: 5px 10px;
+    border: none;
+    font-weight: 500;
+}
+
+#sso-google {
+    box-shadow: 2px 2px 2px #d3d3d3;
+    background-color: #fff;
+    color: #5b6987;
+    background-image: url("../img/google-icon.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+.login__box p {
+    color: #031b4e;
+}
+.login__box a {
+    text-decoration: underline;
+}
+/* login form */
+
+/* hero responsive */
+/* ---- from small devices / tablets ----  */
+@media screen and (min-width:768px) {
+    #hero {
+        background-position: 67%;
+    }
+}
+/* /---- from small devices / tablets ----  */
+
+/* ---- from medium devices / desktops ----  */
+@media screen and (min-width:992px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    #hero {
+        background-position: center;
+    }
+}
+/* /---- from medium devices / desktops ----  */
+/* /hero responsive */
+/* /hero */
+
+/* partners */
+#partners {
+    padding-bottom: 30px;
+}
+
+.partners__logo {
+    margin: 10px;
+}
+
+/* partners responsive */
+/* ---- from extra-small devices / smartphone ----  */
+@media screen and (max-width:768px) {
+    .partners__logo {
+        width: calc((100% / 2) - 24px);
+    }
+}
+/* /---- from extra-small devices / smartphone ----  */
+
+/* ---- from small devices / tablets ----  */
+@media screen and (min-width:768px) {
+    .partners__logo {
+        width: calc((100% / 3) - 24px);
+    }
+}
+/* /---- from small devices / tablets ----  */
+
+/* ---- from medium devices / desktops ----  */
+@media screen and (min-width:992px) {
+    .partners__logo {
+        width: calc((100% / 6) - 24px);
+    }
+}
+/* /---- from medium devices / desktops ----  */
+/* /partners responsive */
+/* /partners */
+
+/* feat1 */
+#feat1 {
+    padding-bottom: 30px;
+}
+.feat__nav__btn  {
+   display: block;
+   border: none;
+   border-left: 1px solid #5b6987;
+   color: #5b6987;
+   padding: 10px 10px;
+   font-size: 18px;
+}
+.feat__nav__btn.active {
+    border-color: #031b4e;
+}
+.feat__nav__btn:focus {
+    outline: none;
+}
+.feat__nav__btn:hover, .feat__nav__btn:active {
+    border-color: #031b4e;
+}
+
+.feat__items img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+.feat__items p {
+    font-size: 14px;
+}
+
+/* feat1 responsive */
+/* ---- from extra-small devices / smartphone ----  */
+@media screen and (max-width:768px) {
+    .partners__logo {
+        width: calc((100% / 2) - 24px);
+    }
+}
+/* /---- from extra-small devices / smartphone ----  */
+
+
+
+
+
+
+
+
+
+
+/* /main */
